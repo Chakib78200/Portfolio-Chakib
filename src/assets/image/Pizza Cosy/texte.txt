@@ -1,0 +1,14 @@
+Intégration HTML5 - CSS (Bootstrap)
+Développement sous Wordpress
+Animation des pages par JavaScript (jQuery) / AJAX
+Référencement naturel SEO
+Optimisation Cloudflare
+
+INFOS PROJET
+Un site qui veut aider ceux qui voudraient changer de projet professionnel sans savoir comment faire.
+En proposant chaque semaine des cours vidéo, des exercices et des conseils a suivre.
+Cela grâce à la vente de box digitale via woocommerce.
+
+
+https://www.pizzacosy.fr/
+

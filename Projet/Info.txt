@@ -1,0 +1,4 @@
+L'outil de validation du W3C, le W3C Markup Validation Service, ne prend pas en charge les fichiers avec l'extension .vue, 
+car ils combinent souvent HTML, CSS et JavaScript dans une seule structure de fichier. 
+Pour valider le contenu HTML extrait de vos fichiers .vue, vous pouvez créer un fichier HTML distinct, 
+y coller le contenu de toutes les balises <template> de vos composants, puis utiliser le service de validation du W3C.

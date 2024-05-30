@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Portfolio développeur Web Frond End"
+    content="Portofolio développeur Web Frond End, language HTML5, CSS3, Javascript, Vue js 3." />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <title>Portfolio de Chakib Goussaira</title>
+</head>
+
+
+<body>  
+ <header>
+      <img src="../assets/image/favicon.jpg" @click="scrollToTop" alt="Logo" class="scroll-to-top" />
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <router-link to="/presentation" class="nav-link" exact-active-class="active">Présentation</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/creations" class="nav-link" exact-active-class="active">Créations</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/contact" class="nav-link" exact-active-class="active">Contact</router-link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+  <article>
+    <div class="container">
+      <div>
+        <img src="../assets/image/Photo.jpg" alt="Photo" class="img1 animated-image" />
+      </div>
+      <div>
+        <img src="../assets/image/Image.jpg" alt="Image" class="img2 animated-image" />
+      </div>
+      <div class="txt">
+        <h1 class="colored-text" id="coloredText">Chakib Goussaira</h1>
+        <h3 class="colored-text" id="coloredText">Développeur Front End</h3>
+        <div class="header">
+          <h2>Je suis Chakib Goussaira</h2>
+          <h2>Développeur Web spécialisé dans la création de sites modernes et réactifs</h2>
+          <p>J'utilise diverses technologies front-end pour concevoir des solutions complètes et performantes.</p>
+        </div>
+        <div class="section">
+          <h2>DEV-TEC</h2>
+          <p>DEV.TEC est une entreprise dédiée au développement de solutions Web sur mesure pour toutes les
+            entreprises. Nous nous engageons à fournir des services de haute qualité pour aider nos clients à
+            atteindre leurs objectifs en ligne.</p>
+          <ul class="list">
+            <li><strong>Mission :</strong> Aider les entreprises à réussir en ligne avec des solutions web
+              innovantes.</li>
+            <li><strong>Vision :</strong> Devenir le partenaire de choix pour les entreprises sur le web.</li>
+            <li><strong>Valeurs :</strong> Innovation, qualité, service client, collaboration.</li>
+          </ul>
+        </div>
+        <div class="section services-section">
+          <div class="services-text">
+            <h2>Services</h2>
+            <ul class="list">
+              <li><strong>Développement Front-end :</strong>
+                <ul>
+                  <li>Conception UI/UX</li>
+                  <li>Développement HTML/CSS</li>
+                  <li>JavaScript & Frameworks (Vue.js, React)</li>
+                </ul>
+              </li>
+              <li><strong>Développement Back-end :</strong>
+                <ul>
+                  <li>Node.JS & Express</li>
+                  <li>Bases de données (MySQL, PostgreSQL, MongoDB)</li>
+                  <li>Sécurité</li>
+                </ul>
+              </li>
+              <li><strong>Déploiement :</strong>
+                <ul>
+                  <li>Hébergement & serveurs</li>
+                  <li>CI/CD</li>
+                  <li>Maintenance & Support</li>
+                </ul>
+              </li>
+              <li><strong>Optimisation et Performance :</strong>
+                <ul>
+                  <li>Optimisation du code</li>
+                  <li>SEO</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="dev-tec">
+            <img src="../assets/image/Dev-Tec.png" alt="Image Dev-tec" class="dev-tec-image">
+          </div>
+          <div class="cv">
+            <h4 class="txt-cv">Mon CV</h4>
+            <a href="/assets/pdf/Mon-CV.pdf" target="_blank"><img src="/assets/image/Téléchargement.png"
+                alt="Image Téléchargement" class="download" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+<main>
+    <div class="box-modal">
+        <div class="containerCreation">
+            <div class="creation" data-modal="myModal1" data-title="ALTIMA CHR - CATALOGUE EN LIGNE"
+                data-date="Date de création 1" data-technologies="Technologies utilisées"
+                data-link="https://www.altimachr.com/" data-github="https://github1.com">
+                <h3 class="animated-text">ALTIMA CHR - CATALOGUE EN LIGNE</h3>
+                <img src="../assets/image/ALTIMA CHR/Altima.png" alt="Image 1" class="img-queries">
+                <p>
+                    Un catalogue pour la présentation des produits en ligne.
+                    Les utilisateurs peuvent uniquement consulter et faire une demande de devis.
+                    Une migration vers une boutique en ligne est en cours..
+                </p>
+            </div>
+            <div class="creation" data-modal="myModal2" data-title="DPS MARKET" data-date="Date de création"
+                data-technologies="Technologies utilisées" data-link="https://dpsmarket.com/"
+                data-github="https://github2.com">
+                <h3 class="animated-text">DPS MARKET</h3>
+                <img src="../assets/image/DPS/DPS.png" alt="Image 2" class="img-queries">
+                <p>
+                    Une boutique pour la présentation des produits en ligne .
+                    Une refonte du site via un thème a ete mise en place ainsi que l'optimisation des pages
+                    et
+                    du
+                    SEO
+                </p>
+            </div>
+            <div class="creation" data-modal="myModal3" data-title="Gamer Zone" data-date="Date de création"
+                data-technologies="Technologies utilisées" data-link="https://www.yte.fr/"
+                data-github="https://github3.com">
+                <h3 class="animated-text">Gamer Zone</h3>
+                <img src="../assets/image/Gamer zone/Gamer zone.png" alt="Image 3" class="img-queries">
+                <p>
+                    Une boutique de jeux vidéo pour la présentation des produits en ligne .
+                    Une refonte du site via un thème a ete mise en place ainsi que l'optimisation des pages
+                    et
+                    du
+                    SEO
+                </p>
+            </div>
+            <div class="creation" data-modal="myModal4" data-title="Pizza Cosy" data-date="Date de création"
+                data-technologies="Technologies utilisées" data-link="https://www.pizzacosy.fr/"
+                data-github="https://github4.com">
+                <h3 class="animated-text">Pizza Cosy</h3>
+                <img src="../assets/image/Pizza Cosy/Pizza Cosy.png" alt="Image 4" class="img-queries">
+                <p>
+                    Un site qui pour commander des pizzas en Click and Collect.
+                    En proposant chaque semaine des promotions et des nouveauté de produits.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Modals -->
+    <div class="containerModal">
+        <div id="myModal1" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle1" class="animated-text">Création 1</h2>
+                <div class="slider">
+                    <span style="--i:1;"><img src="../assets/image/ALTIMA CHR/Altima1.png"
+                            alt="Image Altima 1" /></span>
+                    <span style="--i:2;"><img src="../assets/image/ALTIMA CHR/Altima2.png"
+                            alt="Image Altima 2" /></span>
+                    <span style="--i:3;"><img src="../assets/image/ALTIMA CHR/Altima3.png"
+                            alt="Image Altima 3" /></span>
+                </div>
+                <div id="date-project">
+                    <p>Date de création : <time datetime="2023-09-25">25/09/2023</time> <span
+                            id="modalDate1"></span>
+                    </p>
+                    <p>Technologies utilisées : Intégration HTML5 - CSS (Bootstrap). <br>
+                        Développement sous JavaScript. <br>
+                        Animation des pages par JavaScript (jQuery) / AJAX. <br>
+                        Référencement naturel SEO. <br>
+                        Optimisation Cloudflare.
+                        <span id="modalTechnologies"></span>
+                    </p>
+                    <p>Visiter le site : <span><a id="modal-link" href="https://www.altimachr.com/"
+                                target="_blank" rel="noopener noreferrer">ALTIMA CHR</a></span></p>
+                </div>
+            </div>
+        </div>
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle2" class="animated-text">Création 2</h2>
+                <div class="slider">
+                    <span style="--i:1;"><img src="../assets/image/DPS/DPS1.png" alt="Image DPS 1" /></span>
+                    <span style="--i:2;"><img src="../assets/image/DPS/DPS2.png" alt="Image DPS 2" /></span>
+                    <span style="--i:3;"><img src="../assets/image/DPS/DPS3.png" alt="Image DPS 3" /></span>
+                </div>
+                <div id="date-project">
+                    <p>Date de création : <time datetime="2023-09-25">03/10/2023</time> <span
+                            id="modalDate2"></span>
+                    </p>
+                    <p>Technologies utilisées : HTML5 - CSS - Javascript. <br>
+                        Développement sous Javascript. <br>
+                        Refonte design via Javascript. <br>
+                        Référencement naturel SEO
+                        <span id="modalTechnologies"></span>
+                    </p>
+                    <p>Visiter le site : <span><a id="modal-link" href="https://dpsmarket.com/"
+                                target="_blank" rel="noopener noreferrer">DPS Market</a></span></p>
+                </div>
+            </div>
+        </div>
+        <div id="myModal3" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle3" class="animated-text">Création 3</h2>
+                <div class="slider">
+                    <span style="--i:1;"><img src="../assets/image/Gamer zone/Gamer zone1.png"
+                            alt="Image Gamer zone 1" /></span>
+                    <span style="--i:2;"><img src="../assets/image/Gamer zone/Gamer zone2.png"
+                            alt="Image Gamer zone 2" /></span>
+                    <span style="--i:3;"><img src="../assets/image/Gamer zone/Gamer zone3.png"
+                            alt="Image Gamer zone 3" /></span>
+                </div>
+                <div id="date-project">
+                    <p>Date de création : <time datetime="2023-09-25">28/10/2023</time> <span
+                            id="modalDate3"></span>
+                    </p>
+                    <p>Technologies utilisées : HTML5 - CSS - Javascript. <br>
+                        Développement sous javascript. <br>
+                        crèation d'une vitrine statique. <br>
+                        Référencement naturel SEO
+                        <span id="modalTechnologies"></span>
+                    </p>
+                    <p>Visiter le site : <span><a id="modal-link" href="https://www.yte.fr/" target="_blank"
+                                rel="noopener noreferrer">Gamer Zone</a></span></p>
+                </div>
+            </div>
+        </div>
+        <div id="myModal4" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle4" class="animated-text">Création 4</h2>
+                <div class="slider">
+                    <span style="--i:1;"><img src="../assets/image/Pizza Cosy/Pizza Cosy1.png"
+                            alt="Image Pizza Cosy 1" /></span>
+                    <span style="--i:2;"><img src="../assets/image/Pizza Cosy/Pizza Cosy2.png"
+                            alt="Image Pizza Cosy 2" /></span>
+                    <span style="--i:3;"><img src="../assets/image/Pizza Cosy/Pizza Cosy3.png"
+                            alt="Image Pizza Cosy 3" /></span>
+                </div>
+                <div id="date-project">
+                    <p>Date de création : <time datetime="2023-09-25">12/11/2023</time> <span
+                            id="modalDate4"></span>
+                    </p>
+                    <p>Technologies utilisées : Intégration HTML5 - CSS (Bootstrap) - JavaScript. <br>
+                        Développement sous Wordpress. <br>
+                        Animation des pages par JavaScript (jQuery) / AJAX. <br>
+                        Référencement naturel SEO. <br>
+                        Optimisation Cloudflare.
+                        <span id="modalTechnologies"></span>
+                    </p>
+                    <p>Visiter le site : <span><a id="modal-link" href="https://www.pizzacosy.fr/"
+                                target="_blank" rel="noopener noreferrer">Pizza Cosy</a></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section>
+    <div id="flex">
+        <h2 id="competence">Mes compétences</h2>
+        <div class="box-html" ref="boxHTML">
+            <div class="pourcentage-html">
+                <svg>
+                    <circle cx="70" cy="70" r="70" class="circle-bg"></circle>
+                    <circle cx="70" cy="70" r="70" class="circle-html"></circle>
+                </svg>
+                <span>90%</span>
+                <div class="img-language">
+                    <img src="../assets/image/Language/html.png" alt="Logo HTML" class="logo-html">
+                </div>
+                <h2 class="html">HTML</h2>
+            </div>
+        </div>
+        <div class="box-css" ref="boxCSS">
+            <div class="pourcentage-css">
+                <svg>
+                    <circle cx="70" cy="70" r="70" class="circle-bg"></circle>
+                    <circle cx="70" cy="70" r="70" class="circle-css"></circle>
+                </svg>
+                <span>65%</span>
+                <div class="img-language">
+                    <img src="../assets/image/Language/css.png" alt="Logo CSS" class="logo-css">
+                </div>
+                <h2 class="css">CSS</h2>
+            </div>
+        </div>
+        <div class="box-javascript" ref="boxJS">
+            <div class="pourcentage-javascript">
+                <svg>
+                    <circle cx="70" cy="70" r="70" class="circle-bg"></circle>
+                    <circle cx="70" cy="70" r="70" class="circle-js"></circle>
+                </svg>
+                <span>20%</span>
+                <div class="img-language">
+                    <img src="../assets/image/Language/javascript.png" alt="Logo JavaScript"
+                        class="logo-javascript">
+                </div>
+                <h2 class="js">JAVASCRIPT</h2>
+            </div>
+        </div>
+        <div class="box-vuejs" ref="boxVueJS">
+            <div class="pourcentage-vuejs">
+                <svg>
+                    <circle cx="70" cy="70" r="70" class="circle-bg"></circle>
+                    <circle cx="70" cy="70" r="70" class="circle-vuejs"></circle>
+                </svg>
+                <span>30%</span>
+                <div class="img-language">
+                    <img src="../assets/image/Language/vue js.png" alt="Logo Vue js" class="logo-vuejs">
+                </div>
+                <h2 class="vuejs">VUE.JS</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <section id="contact">
+     <div class="title">
+         <h2 class="animer-lettre">Contactez-moi via les réseaux sociaux ou par e-mail.</h2>
+     </div>
+     <div class="contenu">
+         <a href="https://github.com/"><img src="../assets/image/GitHub-logo.png" alt="GitHub"
+                 class="github-left"></a>
+         <form id="contact-form" @submit.prevent="sendEmail">
+             <label for="first-name">Prénom</label>
+             <input v-model="form.firstName" type="text" name="first-name" required>
+             <label for="last-name">Nom</label>
+             <input v-model="form.lastName" type="text" name="last-name" required>
+             <label for="objet">Objet</label>
+             <input v-model="form.subject" type="text" name="subject" required>
+             <label for="message">Message</label>
+             <textarea v-model="form.message" name="message" rows="6" cols="10" maxlength="500"
+                 required></textarea>
+             <button type="submit">Envoyer</button>
+         </form>
+         <a
+             href="https://www.linkedin.com/feed/?trk=sem-ga_campid.21228777300_asid.161774284317_crid.698137525090_kw.linkedin_d.c_tid.kwd-"><i
+                 src="../assets/image/Linkedin-logo.png" alt="Linkedin" class="linkedin-right"></a>
+     </div>
+ </section>
+
+<footer>
+    <div class="box-footer">
+        <div class="icone-social">
+            <div class="icone-github">
+                <a href="https://github.com/"><img src="../assets/image/icone/icone-github.png" alt="GitHub"
+                        class="github-left"></a>
+            </div>
+            <div class="icone-linkedin">
+                <a
+                   href="https://www.linkedin.com/feed/?trk=sem-ga_campid.21228777300_asid.161774284317_crid.698137525090_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9056240"><img
+                   src="../assets/image/icone/icone-linkedin.png" alt="Linkedin"></a>
+            </div>
+        </div>
+        <div class="lien">
+            <ul>
+                <li class="footer-links"><router-link
+                        to="/presentation#debut-page-presentation">Présentation</router-link></li>
+                <li class="footer-links"><router-link
+                        to="/creations#debut-page-creation">Créations</router-link></li>
+                <li class="footer-links"><router-link to="/contact#debut-page-contact">Contact</router-link>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <router-link to="/contact"><img src="../assets/image/Contactez-moi.png" alt="Contactez-moi"
+                    class="contact"></router-link>
+        </div>
+        <div class="Tel-email-Img">
+            <img src="../assets/image/Email.png" alt="Image Email et Tél" class="img-email-tel">
+        </div>
+    </div>
+    <div class="info">
+        <p classe="name">gchakib@free.fr</p>
+        <p class="tel">06 08 72 21 88</p>
+    </div>
+    <div class="corporate">
+        <p>@ Corporate 2024 Chakib Goussaira. Tous droits réservés.</P>
+    </div>
+    <div class="date">
+        <p> Dernière mise à jour : <span id="last-updated"></span></p>
+    </div>
+</footer>
+</body>
+
+</html>
+
+
+
+
