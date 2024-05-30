@@ -4,8 +4,8 @@
             <div class="box-footer">
                 <div class="icone-social">
                     <div class="icone-github">
-                        <a href="https://github.com/"><img src="../assets/image/icone/icone-github.png" alt="GitHub"
-                                class="github-left"></a>
+                        <a href="https://github.com/Chakib78200/Portfolio-Chakib.git"><img
+                                src="../assets/image/icone/icone-github.png" alt="GitHub" class="github-left"></a>
                     </div>
                     <div class="icone-linkedin">
                         <a
